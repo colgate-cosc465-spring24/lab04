@@ -117,7 +117,7 @@ record.)
 *Before you proceed:*
 1. Restart bind
 2. Wait until bind outputs `running`
-3. Run tshark without the `-c 1` command-line argument
+3. Run tshark 
 4. Issue a DNS query for A records for `www.google.com`
 5. Kill tshark (using ctrl+c)
 
