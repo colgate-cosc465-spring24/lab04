@@ -73,7 +73,7 @@ email servers?
 
 ## Part 2a: DN resolution steps for www.colgate.edu
 1. The 1st packet was sent from dig running in the host operating systems
-(172.0.0.1) to a Docker container (172.0.0.?). Is this a query or response?
+(172.17.0.1) to a Docker container (172.17.0.?). Is this a query or response?
 
 
 2. How does the recursion desired flag on the 1st packet compare to the 2nd
@@ -105,7 +105,7 @@ each record.)
 
 
 9. The last (i.e., 10th) packet was sent from bind running in the Docker
-container to dig running in the host operating system (172.0.0.1). Is this a
+container to dig running in the host operating system (172.17.0.1). Is this a
 query or response?
 
 
@@ -156,7 +156,7 @@ each record.)
 
 
 9. The last (i.e., 10th) packet was sent from bind running in the Docker
-container to dig running in the host operating system (172.0.0.1). Is this a
+container to dig running in the host operating system (172.17.0.1). Is this a
 query or response?
 
 
