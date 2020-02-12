@@ -85,7 +85,7 @@ destination IP address.)
 
 
 4. What records did the previously listed NS send? (List the DN and type for
-each record.)
+each record included in the Answers and Authoritative nameservers sections.)
 
 
 5. Whom did bind (running in the Docker container) contact next? (Hint: conduct
@@ -93,7 +93,7 @@ a reverse lookup on the destination IP address.)
 
 
 6. What records did the previously listed NS send? (List the DN and type for
-each record.)
+each record included in the Answers and Authoritative nameservers sections.)
 
 
 7. Whom did bind (running in the Docker container) contact next? (Hint: conduct
@@ -101,7 +101,7 @@ a reverse lookup on the destination IP address.)
 
 
 8. What records did the previously listed NS send? (List the DN and type for
-each record.)
+each record included in the Answers and Authoritative nameservers sections.)
 
 
 9. The last (i.e., 10th) packet was sent from bind running in the Docker
@@ -136,7 +136,7 @@ destination IP address.)
 
 
 4. What records did the previously listed NS send? (List the DN and type for
-each record.)
+each record included in the Answers and Authoritative nameservers sections.)
 
 
 5. Whom did bind (running in the Docker container) contact next? (Hint: conduct
@@ -144,7 +144,7 @@ a reverse lookup on the destination IP address.)
 
 
 6. What records did the previously listed NS send? (List the DN and type for
-each record.)
+each record included in the Answers and Authoritative nameservers sections.)
 
 
 7. Whom did bind (running in the Docker container) contact next? (Hint: conduct
@@ -152,7 +152,7 @@ a reverse lookup on the destination IP address.)
 
 
 8. What records did the previously listed NS send? (List the DN and type for
-each record.)
+each record included in the Answers and Authoritative nameservers sections.)
 
 
 9. The last (i.e., 10th) packet was sent from bind running in the Docker
