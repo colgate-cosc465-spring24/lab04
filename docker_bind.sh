@@ -7,4 +7,4 @@ fi
 
 BIND_PORT=$1
 
-docker run --tty --interactive --rm --name=${USER}_bind --cap-add=NET_RAW --cap-add=NET_ADMIN --publish $BIND_PORT:53/tcp --publish $BIND_PORT:53/udp --volume="$(pwd)"/dumps:/dumps colgatecosc465/bind:latest
+docker run --tty --interactive --rm --name=${USER}_bind --cap-add=NET_RAW --cap-add=NET_ADMIN --publish $BIND_PORT:53/tcp --publish $BIND_PORT:53/udp colgatecosc465/bind:latest
