@@ -61,25 +61,25 @@
 3. To whom was the 3rd packet sent? (Hint: conduct a reverse lookup on the destination IP address.)
 
 
-4. What records did the previously listed NS send? (Hint: look at the 5th packet; list the DN and type for each record included in the Answers and Authoritative nameservers sections.)
+4. What records did the previously listed NS send? (Hint: Look at the 4th or 5th packet. List the name, type, and value for each record included in the Answers and Authoritative nameservers sections. You can ignore OPT records.)
 
 
 5. Whom did bind (running in the Docker container) contact next? (Hint: conduct a reverse lookup on the destination IP address.)
 
 
-6. What records did the previously listed NS send? (List the DN and type for each record included in the Answers and Authoritative nameservers sections.)
+6. What records did the previously listed NS send? (List the name, type, and value for each record included in the Answers and Authoritative nameservers sections. You can ignore OPT, NSEC3, and RRSIG records.)
 
 
 7. Whom did bind (running in the Docker container) contact next? (Hint: conduct a reverse lookup on the destination IP address.)
 
 
-8. What records did the previously listed NS send? (List the DN and type for each record included in the Answers and Authoritative nameservers sections.)
+8. What records did the previously listed NS send? (List the name, type, and value for each record included in the Answers and Authoritative nameservers sections. You can ignore OPT records.)
 
 
 9. The last (i.e., 10th) packet was sent from bind running in the Docker container to dig running in the host operating system (172.17.0.1). Is this a query or response?
 
 
-10. What records does the last packet contain? (List the DN and type for each record.)
+10. What records does the last packet contain? (List the name, type, and value for each record included in the Answers and Authoritative nameservers sections. You can ignore OPT records.)
 
 
 **Before you proceed:**
