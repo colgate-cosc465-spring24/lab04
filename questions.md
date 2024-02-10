@@ -84,7 +84,7 @@
 
 **Before you proceed:**
 **Do not restart bind; it should still be running from Part 2a**
-1. Run tshark, storing its output in a file called `part2b.txt`
+1. Run tshark, storing its output in a file called `part2b_portal.txt`
 2. Issue a DNS query for A records for `portal.colgate.edu`
 3. Kill tshark (using ctrl+c)
 
@@ -102,12 +102,12 @@
 query for A records for `degreeworks.colgate.edu` (without restarting bind)?
 
 
-5. Run tshark, storing its output in a file called `part2b5.txt`; issue a DNS query for A records for `degreeworks.colgate.edu`; kill tshark. How does the observed behavior (look at the output from tshark) compare to the expected behavior you specified in the previous question?
+5. Run tshark, storing its output in a file called `part2b_degreeworks.txt`; issue a DNS query for A records for `degreeworks.colgate.edu`; kill tshark. How does the observed behavior (look at the output from tshark) compare to the expected behavior you specified in the previous question?
 
 
 6. To whom do you expect bind to send queries if you used dig to issue a DNS query for A records for `www.hamilton.edu` (without restarting bind)?
 
 
-7. Run tshark, storing its output in a file called `part2b7.txt`; issue a DNS query for A records for `www.hamilton.edu`; kill tshark. How does the observed behavior (look at the output from tshark) compare to the expected behavior you specified in the previous question?
+7. Run tshark, storing its output in a file called `part2b_hamilton.txt`; issue a DNS query for A records for `www.hamilton.edu`; kill tshark. How does the observed behavior (look at the output from tshark) compare to the expected behavior you specified in the previous question?
 
 
