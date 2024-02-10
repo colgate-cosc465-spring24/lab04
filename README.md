@@ -1,4 +1,4 @@
-# Lab 03: Dissecting the Domain Name System (DNS)
+# Lab 04: Dissecting the Domain Name System (DNS)
 
 ## Overview
 The Domain Name System (DNS) is a critical component of computer networks. In this lab, you’ll examine how DNS works by inspecting the DNS records for domains you (likely) use every day.
@@ -13,22 +13,23 @@ After completing this lab, you should be able to:
 
 
 ## Getting started
-Clone your git repository on the `tigers` servers.
+Clone your git repository on a tigers server.
 
-As you work on this lab, you may want to refer to the [class notes on DNS](https://docs.google.com/document/d/1EWD6RM-42BhePmixCQ4QtXy7FiWfpZunOPSq6V3h_Oc/edit?usp=sharing).
+As you work on this lab, you may want to refer to the [class notes on DNS](https://docs.google.com/document/d/1Hw4gsG142lPyKLFF1DLgr0A0x021FhWIcpkmW1yUU1k/edit?usp=sharing).
 
-You will need **three** terminal windows (all connected to the **same** `tigers` server). You will run the following three commands (one in each terminal window) in the order listed below:
+You will need **three** terminal windows. You will run the following three commands (one in each terminal window) in the order listed below:
 
 1. **`./docker_bind.sh BIND_PORT`** 
 
     replacing `BIND_PORT` with a randomly choosen port number between `5000` and `65000`; this will determine the port on which `bind`—a popular DNS application that functions as both a name server (NS) and a recursive resolver (RR)—listens for DNS queries.
 
-2. **`./docker_exec.sh tshark -Odns udp and port 53`**
+2. **`./docker_exec.sh tshark -Odns udp and port 53 > packets.txt`**
 
     The command line arguments do the following:
         * `tshark` is the program to run within the Docker container
         * `-Odns` tells tshark to print out detailed information about the contents of DNS queries/responses
         * `udp and port 53` is a filter that tells tshark to only capture and analyze packets whose transport-layer protocol is the User Datagram Protocol (UDP) and whose source or destination port is 53 (the standard port for DNS) 
+        * `> packets.txt` instructs the terminal to store the output from tshark into a file called `packets.txt`
 
 3. **`dig @127.0.0.1 -p BIND_PORT +notcp www.colgate.edu A`**
 
@@ -71,7 +72,7 @@ colgate.edu.            170855  IN      NS      ns5.colgate.edu.
 
 ;; Query time: 0 msec
 ;; SERVER: 127.0.0.1#8053(127.0.0.1)
-;; WHEN: Tue Feb 11 09:14:51 EST 2020
+;; WHEN: Sat Feb 10 23:21:46 UTC 2024
 ;; MSG SIZE  rcvd: 153
 ```
 
@@ -289,5 +290,5 @@ Although DNS is primarily used to lookup IP addresses and DN aliases associated 
 
 **🛑 Answer the Part 2 questions in `questions.md`. You must restart `bind` when instructed to ensure you properly observe bind's behavior.**
 
-## Submission instructions
-When you are done, you should commit and push your changes to `questions.md` GitHub.
+## Self-assessment
+The self-assessment for this lab will be available on Moodle after 5pm on Thursday, February 15. Please complete the self-assessment by 11pm on Monday, February 19.
