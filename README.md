@@ -291,4 +291,4 @@ Although DNS is primarily used to lookup IP addresses and DN aliases associated 
 **🛑 Answer the Part 2 questions in `questions.md`. You must restart `bind` when instructed to ensure you properly observe bind's behavior.**
 
 ## Self-assessment
-The self-assessment for this lab will be available on Moodle after 5pm on Thursday, February 15. Please complete the self-assessment by 11pm on Monday, February 19.
+The self-assessment for this lab will be available on Moodle next week. Please complete the self-assessment by 11pm on Tuesday, February 20.
